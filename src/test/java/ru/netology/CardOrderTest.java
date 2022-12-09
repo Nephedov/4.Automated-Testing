@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CardOrderTest {
 
@@ -92,13 +93,23 @@ public class CardOrderTest {
     }
 
     @Test
-    void cardOrderFormCheckboxEnableTest() {
+    void cardOrderFormCheckboxDisableVisibleTest() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Петров Петя");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+71231231212");
         driver.findElement(By.cssSelector("button[role='button'][type='button']")).click();
 
-        String actual = driver.findElement(By.cssSelector("[data-test-id='agreement'] .checkbox__text")).getCssValue("color");
-        assertEquals("rgba(255, 92, 92, 1)", actual);
+        ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid")));
+
+    }
+
+    @Test
+    void cardOrderFormCheckboxDisableAssertTextTest() {
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Петров Петя");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+71231231212");
+        driver.findElement(By.cssSelector("button[role='button'][type='button']")).click();
+
+        String actual = driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid")).getText();
+        assertEquals("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй", actual);
 
     }
 
