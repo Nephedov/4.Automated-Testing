@@ -3,14 +3,15 @@
 # Домашнее задание к занятию «2.1. Тестирование веб-интерфейсов»
 
 ## Решение
- * <a href="https://github.com/Nephedov/4.Automated-Testing/blob/ecd41e52d1bde01bcba773ed6c395c5b7e9cef55/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a> - класс с функциональными тестами отправки формы, с использованием WebDriver и Selenium.
+* <a href="https://github.com/Nephedov/4.Automated-Testing/blob/ecd41e52d1bde01bcba773ed6c395c5b7e9cef55/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a> - класс с функциональными тестами отправки формы, с использованием WebDriver и Selenium.
 ## Что было сделано
-  * Создан и настроен Gradle проект с зависимостями:
-    * JunitJupier.
-    * Selenide.
-    * WebDriverManager.
-  * Подключен к проекту AppVeyor. Настроен appveyor.yml. Добавлен бейдж в README.md, о статусе сборки при пуше.
-  * Реализованы функциональные автотесты формы заявки карты в классе CardOrderTest.java.
+* Настроек <a href="https://github.com/Nephedov/4.Automated-Testing/blob/578359ab648bf583c7f27889681b68f542b23f75/build.gradle">build.gradle</a> с зависимостями:
+  * JunitJupier.
+  * Selenide.
+  * WebDriverManager.
+* Подключен к проекту AppVeyor. Настроен <a href="https://github.com/Nephedov/4.Automated-Testing/blob/578359ab648bf583c7f27889681b68f542b23f75/.appveyor.yml">appveyor.yml</a>. Добавлен бейдж в README.md, о статусе сборки при пуше.
+* Реализованы функциональные автотесты формы заявки карты в классе
+  <a href="https://github.com/Nephedov/4.Automated-Testing/blob/ecd41e52d1bde01bcba773ed6c395c5b7e9cef55/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a>.
 
 ## Задача №1: заказ карты
 
@@ -29,40 +30,10 @@
 
 ![](pic/success.jpg)
 
-Вам необходимо самостоятельно изучить элементы на странице, чтобы подобрать правильные селекторы.
-
-<details>
-    <summary>Подсказка</summary>
-
-    Смотрите на `data-test-id` и внутри него ищите нужный вам `input` — используйте вложенность для селекторов.
-</details>
-
-Проект с автотестами должен быть выполнен на базе Gradle с использованием Selenide или Selenium по выбору студента.
-
-Для запуска тестируемого приложения, находясь в корне проекта, выполните в терминале команду:
-`java -jar ./artifacts/app-order.jar`
-
-Приложение будет запущено на порту 9999.
-
 ## Задача №2: проверка валидации (необязательная)
-
-После того как вы протестировали happy path, необходимо протестировать остальные варианты.
 
 Тестируемая функциональность: валидация полей перед отправкой.
 
 Условия: если какое-то поле не заполнено или заполнено неверно, то при нажатии на кнопку «Продолжить» должны появляться сообщения об ошибке. Будет подсвечено только первое неправильно заполненное поле:
 
 ![](pic/error.png)
-
-<details>
-    <summary>Подсказка</summary>
-
-    У некоторых элементов на странице появится css-класс `input_invalid`.
-</details>
-
-
-Убедиться, что приложение работает, вы можете, открыв в браузере страницу: http://localhost:9999
-
-Если по каким-то причинам порт 9999 на вашей машине используется другим приложением, используйте:
-
-`java -jar app-order.jar -port=7777`
