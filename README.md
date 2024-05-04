@@ -5,7 +5,7 @@
 ## Решение
 * <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a> - класс с функциональными тестами отправки формы, с использованием WebDriver и Selenium.
 ## Что было сделано
-* Настроек <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/build.gradle">build.gradle</a> с зависимостями:
+* Настроен <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/build.gradle">build.gradle</a> с зависимостями:
   * JunitJupier.
   * Selenide.
   * WebDriverManager.
