@@ -3,15 +3,15 @@
 # Домашнее задание к занятию «2.1. Тестирование веб-интерфейсов»
 
 ## Решение
-* <a href="https://github.com/Nephedov/4.Automated-Testing/blob/ecd41e52d1bde01bcba773ed6c395c5b7e9cef55/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a> - класс с функциональными тестами отправки формы, с использованием WebDriver и Selenium.
+* <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a> - класс с функциональными тестами отправки формы, с использованием WebDriver и Selenium.
 ## Что было сделано
-* Настроек <a href="https://github.com/Nephedov/4.Automated-Testing/blob/578359ab648bf583c7f27889681b68f542b23f75/build.gradle">build.gradle</a> с зависимостями:
+* Настроек <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/build.gradle">build.gradle</a> с зависимостями:
   * JunitJupier.
   * Selenide.
   * WebDriverManager.
-* Подключен к проекту AppVeyor. Настроен <a href="https://github.com/Nephedov/4.Automated-Testing/blob/578359ab648bf583c7f27889681b68f542b23f75/.appveyor.yml">appveyor.yml</a>. Добавлен бейдж в README.md, о статусе сборки при пуше.
+* Подключен к проекту AppVeyor. Настроен <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/.appveyor.yml">appveyor.yml</a>. Добавлен бейдж в README.md, о статусе сборки при пуше.
 * Реализованы функциональные автотесты формы заявки карты в классе
-  <a href="https://github.com/Nephedov/4.Automated-Testing/blob/ecd41e52d1bde01bcba773ed6c395c5b7e9cef55/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a>.
+  <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a>.
 
 ## Задача №1: заказ карты
 
