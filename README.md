@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/wi4fusp6c2f0wqfs?svg=true)](https://ci.appveyor.com/project/Nephedov/cardorder)
 
-# Домашнее задание к занятию «2.1. Тестирование веб-интерфейсов»
+# «Тестирование веб-интерфейсов»
 
 ## Решение
 * <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a> - класс с функциональными тестами отправки формы, с использованием WebDriver и Selenium.
