@@ -13,6 +13,10 @@
 * Реализованы функциональные автотесты формы заявки карты в классе
   <a href="https://github.com/Nephedov/4.Automated-Testing/blob/main/src/test/java/ru/netology/CardOrderTest.java">CardOrderTest.java</a>.
 
+---
+---
+
+
 ## Описание Задания №1: заказ карты
 
 Вам необходимо автоматизировать тестирование формы заказа карты:
